@@ -18,7 +18,7 @@ app.get("/",(req,res)=>{
 })
 
 mongoose
-  .connect(mongodb+srv://lolan:lolan@cluster0.ke01k.mongodb.net/?retryWrites=true&w=majority)
+  .connect("mongodb+srv://lolan:lolan@cluster0.ke01k.mongodb.net/?retryWrites=true&w=majority")
   .then(() =>
     app.listen(port, () => console.log(`server running on port ${port}`))
   )
